@@ -4,6 +4,8 @@ import { useState, useEffect, use } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 
+export const dynamic = 'force-dynamic';
+
 export default function WriteReviewPage(props: { params: Promise<{ restaurantId: string }> }) {
   const params = use(props.params);
   const restaurantId = params.restaurantId;
